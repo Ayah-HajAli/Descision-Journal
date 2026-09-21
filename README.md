@@ -44,28 +44,3 @@ flutter create .        # generates android/ ios/ around the existing lib/
 flutter pub get
 flutter run
 ```
-
-All data currently lives in memory (`lib/data/store.dart`), seeded
-with a few example decisions (some sealed, some already resolved) so
-the app isn't empty on first launch. Swap `DecisionStore` for a
-persisted version (e.g. backed by `sqflite`, `hive`, or a backend) to
-keep data between sessions — the rest of the UI doesn't need to
-change.
-
-## Structure
-
-```
-lib/
-  main.dart
-  theme/app_theme.dart        # colors + text theme
-  models/decision.dart        # Decision, DecisionStatus, DecisionCategory
-  data/store.dart             # in-memory ChangeNotifier store
-  widgets/
-    scallop_edge.dart         # scallop clipper + divider
-    logo_pill.dart            # small pill badge + header wordmark
-    decision_card.dart        # home timeline card
-  screens/
-    home_screen.dart
-    new_decision_screen.dart
-    detail_screen.dart        # sealed / reveal / resolved views
-```
