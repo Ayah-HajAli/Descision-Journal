@@ -24,13 +24,7 @@ record of your own judgment over time.
 - **Resolved view** — prediction vs. reality side by side (with your
   video, if you recorded one), and the final verdict front and center.
 
-## Design language
 
-Colors and the scalloped card edges are carried over from the
-reference "Academy" story-card UI: flat saturated color blocks, a
-rounded bold display font (Fredoka) for headlines, and a repeating
-half-circle wave as the signature shape motif — used here as the
-"seal" visual metaphor as well as a plain divider.
 
 ## Running it
 
